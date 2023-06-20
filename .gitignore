@@ -1,3 +1,6 @@
 *.drawio
 *.drawio.bkp
 *.drawio.dtmp
+.vscode/*
+block_description/build*
+block_description/block_test/*.o
