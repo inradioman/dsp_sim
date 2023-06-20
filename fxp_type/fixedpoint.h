@@ -9,11 +9,10 @@
 //класс не определяет операции с числами, а лишь задает способ их хранения в памяти
 //хранит сам массив данных и дает доступ к нему
 #pragma pack(1)
-template <int size, int binary_point, bool issigned>
 class FixedPoint
 {
 public:
-    FixedPoint() : len(size), bp(binary_point), s(issigned) { byte_len = (int)ceil(len / 8); data = new uint8_t[byte_len]; }
+    FixedPoint(int size = 32, int binary_point = 0, bool issigned = false) : len(size), bp(binary_point), s(issigned) { byte_len = (int)ceil(len / 8); data = new uint8_t[byte_len]; }
     ~FixedPoint() { delete[] data; }
 
     //запрос размера в битах
