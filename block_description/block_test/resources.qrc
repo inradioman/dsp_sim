@@ -1,0 +1,5 @@
+<RCC>
+    <qresource prefix="/rsc">
+        <file>default_block.jpg</file>
+    </qresource>
+</RCC>
